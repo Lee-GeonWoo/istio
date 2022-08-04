@@ -55,9 +55,34 @@ You can display the destination rules with the following command:
 $ kubectl get destinationrules -o yaml
 ```
 
+## View the dashboard
+Use the following instructions to deploy the Kiali dashboard, along with Prometheus, Grafana, and Jaeger.
+```
+$ kubectl apply -f samples/addons
+$ kubectl rollout status deployment/kiali -n istio-system
+Waiting for deployment "kiali" rollout to finish: 0 of 1 updated replicas are available...
+deployment "kiali" successfully rolled out
+```
+
+Access the Kiali dashboard.
+```
+$ istioctl dashboard kiali
+```
+or
+```
+$ kubectl edit svc kiali -n istio-system
+spec:
+  type: ClusterIP → NodePort
+  ports:
+  ...
+    nodePort: {30000 ~ 32767}     # add nodePort
+```
+
+
 ### Cleanup
 Delete the routing rules and terminate the application pods
 ```
-samples/bookinfo/platform/kube/cleanup.sh
+chmod +x cleanup.sh
+source cleanup.sh
 ```
 
