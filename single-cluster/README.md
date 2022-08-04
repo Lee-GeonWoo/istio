@@ -42,3 +42,22 @@ $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 gateway.networking.istio.io/bookinfo-gateway created
 virtualservice.networking.istio.io/bookinfo created
 ```
+
+### Apply default destination rules
+Before you can use Istio to control the Bookinfo version routing, you need to define the available versions, called subsets, in destination rules.
+```
+$ kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
+```
+Wait a few seconds for the destination rules to propagate.
+
+You can display the destination rules with the following command:
+```
+$ kubectl get destinationrules -o yaml
+```
+
+### Cleanup
+Delete the routing rules and terminate the application pods
+```
+samples/bookinfo/platform/kube/cleanup.sh
+```
+
