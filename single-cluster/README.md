@@ -34,3 +34,12 @@ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.
 
 <title>Simple Bookstore App</title>
 ```
+
+### Apply Istio Gateway and VirtualService
+```
+$ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+gateway.networking.istio.io/bookinfo-gateway created
+virtualservice.networking.istio.io/bookinfo created
+```
+
+**ddd**
