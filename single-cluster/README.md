@@ -60,6 +60,7 @@ Use the following instructions to deploy the Kiali dashboard, along with Prometh
 ```
 $ kubectl apply -f samples/addons
 $ kubectl rollout status deployment/kiali -n istio-system
+
 Waiting for deployment "kiali" rollout to finish: 0 of 1 updated replicas are available...
 deployment "kiali" successfully rolled out
 ```
