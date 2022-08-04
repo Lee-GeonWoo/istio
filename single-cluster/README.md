@@ -19,13 +19,13 @@ and
 ```
 $ kubectl get pods
 
-**NAME                              READY   STATUS    RESTARTS   AGE
+NAME                              READY   STATUS    RESTARTS   AGE
 details-v1-558b8b4b76-2llld       2/2     Running   0          2m41s
 productpage-v1-6987489c74-lpkgl   2/2     Running   0          2m40s
 ratings-v1-7dc98c7588-vzftc       2/2     Running   0          2m41s
 reviews-v1-7f99cc4496-gdxfn       2/2     Running   0          2m41s
 reviews-v2-7d79d5bd5d-8zzqd       2/2     Running   0          2m41s
-reviews-v3-7dbcdcbc56-m8dph       2/2     Running   0          2m41s**
+reviews-v3-7dbcdcbc56-m8dph       2/2     Running   0          2m41s
 ```
 
 Verify everything is working correctly up to this point.
@@ -39,6 +39,6 @@ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.
 ```
 $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 
-**gateway.networking.istio.io/bookinfo-gateway created**
-**virtualservice.networking.istio.io/bookinfo created**
+# gateway.networking.istio.io/bookinfo-gateway created**
+# virtualservice.networking.istio.io/bookinfo created**
 ```
