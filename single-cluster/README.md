@@ -71,6 +71,7 @@ $ istioctl dashboard kiali
 or
 ```
 $ kubectl edit svc kiali -n istio-system
+
 spec:
   type: ClusterIP → NodePort
   ports:
