@@ -3,7 +3,7 @@
 ### Prerequisite
 > Docker
 
-Install docker and make
+Install docker and make  
 ※ make for cacerts in Istio
 ```
 $ apt update && apt install docker.io -y
