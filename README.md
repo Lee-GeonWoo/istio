@@ -14,7 +14,7 @@ Add the istioctl client to your path
 $ export PATH=$PWD/bin:$PATH
 ```
 
-<h3></h3>
+<h2></h2>
 
 ## In single-cluster
 ```
