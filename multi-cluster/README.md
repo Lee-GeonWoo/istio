@@ -54,6 +54,10 @@ $ source metallb.sh
 ```
 
 ### Install Istio on every clusters
-
+#### Configure Trust
+```
+$ cd /root/istio/istio
+```
 ```
 $
+```
