@@ -21,9 +21,9 @@ $ mv ./kubectl /usr/local/bin/kubectl
 ```
 <br/>
 
-> kind
+> KinD
 
-Install kind
+Install KinD
 ```
 $ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
 $ chmod +x ./kind
@@ -44,7 +44,7 @@ $ export PATH=$PWD/bin:$PATH
 $ cd
 ```
 
-### Create kind cluster
+### Create KinD cluster
 ```
 $ cd istio/multi-cluster
 $ chmod +x util.sh
