@@ -43,21 +43,29 @@ $ cd
 
 ### Create kind cluster
 ```
+$ cd istio/multi-cluster
 $ chmod +x util.sh
 $ source util.sh
 ```
 
 ### Set MetalLB
+For loadbalancing
 ```
 $ chmod +x metallb.sh
 $ source metallb.sh
 ```
 
-### Install Istio on every clusters
+### Install Istio 
 #### Configure Trust
 ```
-$ cd /root/istio/istio
+$ chmod +x cacerts.sh
+$ source cacerts.sh
 ```
+
+#### Install Istio on every clusters
 ```
-$
+$ chmod +x install_istio.sh
+$ source install_istio.sh
 ```
+
+##### DONE
