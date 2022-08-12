@@ -2,6 +2,9 @@
 
 ### Prerequisite
 > Docker
+
+Install docker and make
+※ make for cacerts in Istio
 ```
 $ apt update && apt install docker.io -y
 $ apt install make
@@ -56,13 +59,13 @@ $ source metallb.sh
 ```
 
 ### Install Istio 
-#### Configure Trust
+Configure Trust
 ```
 $ chmod +x cacerts.sh
 $ source cacerts.sh
 ```
 
-#### Install Istio on every clusters
+Install Istio on every clusters
 ```
 $ chmod +x install_istio.sh
 $ source install_istio.sh
