@@ -71,8 +71,6 @@ $ chmod +x install_istio.sh
 $ source install_istio.sh
 ```
 
-##### DONE
-
 (Optional)
 ### All-in-One method
 ```
