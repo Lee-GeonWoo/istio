@@ -14,6 +14,8 @@ Add the istioctl client to your path
 $ export PATH=$PWD/bin:$PATH
 ```
 
+---
+
 ## In single-cluster
 ```
 cd single-cluster
