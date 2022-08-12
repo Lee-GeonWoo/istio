@@ -58,7 +58,8 @@ $ chmod +x metallb.sh
 $ source metallb.sh
 ```
 
-### Install Istio 
+### Install Istio
+#### ※ Multi-Primary Method  
 Configure Trust
 ```
 $ chmod +x cacerts.sh
