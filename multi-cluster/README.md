@@ -4,11 +4,15 @@
 #### Cluster
 This guide requires that you have two Kubernetes clusters with any of the supported Kubernetes versions: 1.21, 1.22, 1.23, 1.24.
 
+<br />
+
 ### Environment Variables
 ```
 $ export CTX_CLUSTER1=<your cluster1 context>
 $ export CTX_CLUSTER2=<your cluster2 context>
 ```
+
+<br />
 
 ### Configure Trust
 This guide will assume that you use a common root to generate intermediate certificates for each cluster. Follow the instructions to generate and push a CA certificate secret to both the cluster1 and cluster2 clusters.
