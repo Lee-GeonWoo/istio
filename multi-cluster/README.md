@@ -69,3 +69,6 @@ $ popd
 
 ### INSTALL
 <a href='https://github.com/Lee-GeonWoo/istio/tree/main/multi-cluster/multi-primary'>Multi-Primary</a>
+<a href='https://github.com/Lee-GeonWoo/istio/tree/main/multi-cluster/primary-remote'>Primary-Remote</a>
+<a href='https://github.com/Lee-GeonWoo/istio/tree/main/multi-cluster/multi-primary-diff-networks'>Multi-Primary on different networks</a>
+<a href='https://github.com/Lee-GeonWoo/istio/tree/main/multi-cluster/primary-remote-diff-networks'>Primary-Remote on different networks</a>
