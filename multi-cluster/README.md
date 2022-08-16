@@ -65,3 +65,7 @@ $ kubectl create secret generic cacerts -n istio-system \
 ```
 $ popd
 ```
+
+
+### INSTALL
+<a href='https://github.com/Lee-GeonWoo/istio/tree/main/multi-cluster/multi-primary'>Multi-Primary</a>
