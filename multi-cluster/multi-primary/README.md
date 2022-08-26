@@ -10,38 +10,9 @@ Service workloads communicate directly (pod-to-pod) across cluster boundaries.
 ![image](https://user-images.githubusercontent.com/70263403/184888541-9f81926c-b17c-4db1-ac55-997d788eb6db.png)
 
 ### Configure cluster1 as a primary
-```
-$ cat <<EOF > cluster1.yaml
-apiVersion: install.istio.io/v1alpha1
-kind: IstioOperator
-spec:
-  values:
-    global:
-      meshID: mesh1
-      multiCluster:
-        clusterName: cluster1
-      network: network1
-EOF
-```
-
 ##### Apply the configuration to cluster1:
 ```
 $ istioctl install --context="${CTX_CLUSTER1}" -f cluster1.yaml
-```
-
-### Configure cluster2 as a primary
-```
-$ cat <<EOF > cluster2.yaml
-apiVersion: install.istio.io/v1alpha1
-kind: IstioOperator
-spec:
-  values:
-    global:
-      meshID: mesh1
-      multiCluster:
-        clusterName: cluster2
-      network: network1
-EOF
 ```
 
 ##### Apply the configuration to cluster2:
